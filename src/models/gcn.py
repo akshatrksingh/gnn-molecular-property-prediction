@@ -6,7 +6,7 @@ from torch_geometric.nn import GCNConv, global_mean_pool
 class GCN(torch.nn.Module):
     """Graph Convolutional Network class with 3 convolutional layers and a linear layer"""
 
-    def __init__(self, input_dim, dim_h):
+    def __init__(self, dim_h):
         """Initialize GCN model
 
         Args:
@@ -14,7 +14,7 @@ class GCN(torch.nn.Module):
             dim_h (int): Dimension of hidden layers
         """
         super(GCN, self).__init__()
-        self.conv1 = GCNConv(input_dim, dim_h)
+        self.conv1 = GCNConv(11, dim_h)
         self.conv2 = GCNConv(dim_h, dim_h)
         self.conv3 = GCNConv(dim_h, dim_h)
         self.lin = nn.Linear(dim_h, 1)

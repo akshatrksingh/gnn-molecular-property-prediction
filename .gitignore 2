@@ -1,0 +1,40 @@
+# Virtual Environment & Python Dependencies
+venv/
+gnn-molecular-property-prediction/lib/
+gnn-molecular-property-prediction/bin/
+gnn-molecular-property-prediction/include/
+gnn-molecular-property-prediction/share/
+gnn-molecular-property-prediction/pyvenv.cfg
+
+# Ignore Data, Logs, & Model Checkpoints
+models/
+data/
+logs/
+
+# Python Compiled Files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Large Files & Artifacts
+*.pkl
+*.pt
+*.h5
+*.zip
+*.tar.gz
+*.ckpt
+
+# VSCode Settings
+.vscode/
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Allow src/models/ but ignore logs inside
+!src/models/
+src/models/logs/
