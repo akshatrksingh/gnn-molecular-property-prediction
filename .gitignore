@@ -1,0 +1,17 @@
+# Ignore virtual environment
+gnn-molecular-property-prediction/
+
+# Ignore dataset, models, and logs
+data/
+models/
+logs/
+
+# Ignore Python cache and compiled files
+__pycache__/
+*.pkl
+*.pt
+*.zip
+.ipynb_checkpoints/
+
+# Ignore VS Code settings
+.vscode/
